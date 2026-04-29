@@ -74,9 +74,11 @@
             transform: scale(1.05);
         }
 
-        a {
-            display: contents;
+        .whatsapp-link {
+            display: block;
+            width: 100%;
             text-decoration: none;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -89,7 +91,7 @@
         
         <!-- Button 1 -->
         <div class="btn-container">
-            <a href="https://wa.me/8618859307737" target="_blank" class="whatsapp-link">
+            <a href="https://wa.me/8618859307737" target="_blank" class="whatsapp-link" onclick="fbq('track', 'Contact');">
                 <img src="https://sc01.alicdn.com/kf/Heb008775a78f4f01a00dad16e968d5ddQ.png" alt="WhatsApp Button" class="whatsapp-btn">
             </a>
         </div>
@@ -100,7 +102,7 @@
 
         <!-- Button 2 -->
         <div class="btn-container">
-            <a href="https://wa.me/8618859307737" target="_blank" class="whatsapp-link">
+            <a href="https://wa.me/8618859307737" target="_blank" class="whatsapp-link" onclick="fbq('track', 'Contact');">
                 <img src="https://sc01.alicdn.com/kf/Heb008775a78f4f01a00dad16e968d5ddQ.png" alt="WhatsApp Button" class="whatsapp-btn">
             </a>
         </div>
@@ -111,23 +113,11 @@
 
         <!-- Button 3 -->
         <div class="btn-container">
-            <a href="https://wa.me/8618859307737" target="_blank" class="whatsapp-link">
+            <a href="https://wa.me/8618859307737" target="_blank" class="whatsapp-link" onclick="fbq('track', 'Contact');">
                 <img src="https://sc01.alicdn.com/kf/Heb008775a78f4f01a00dad16e968d5ddQ.png" alt="WhatsApp Button" class="whatsapp-btn">
             </a>
         </div>
     </div>
-
-    <script>
-        // 确保点击时触发像素追踪
-        document.querySelectorAll('.whatsapp-link').forEach(function(element) {
-            element.addEventListener('click', function() {
-                if (typeof fbq !== 'undefined') {
-                    fbq('track', 'Contact');
-                    console.log('Meta Pixel Contact event tracked');
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>
