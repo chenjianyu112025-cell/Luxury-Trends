@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(249, 249, 247);
+            font-family: "Noto Sans KR", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .btn-container {
+            display: block;
+            width: 100%;
+            background-color: white; /* Optional: adjust if needed */
+        }
+
+        .whatsapp-btn {
+            width: 100%;
+            display: block;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            animation: heartbeat 2s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.03); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.03); }
+            70% { transform: scale(1); }
+        }
+
+        .whatsapp-btn:hover {
+            animation-play-state: paused;
+            transform: scale(1.05);
+        }
+
+        a {
+            display: contents;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section 1 & 2 -->
+        <img src="https://sc01.alicdn.com/kf/Hf66732dc7e244a489af9f174591bddb6y.png" alt="1">
+        <img src="https://sc01.alicdn.com/kf/H3c69290a8c964330aeb66e9fab387ecdf.png" alt="2">
+        
+        <!-- Button 1 -->
+        <div class="btn-container">
+            <a href="https://wa.me/8618859307737" target="_blank">
+                <img src="https://sc01.alicdn.com/kf/Heb008775a78f4f01a00dad16e968d5ddQ.png" alt="WhatsApp Button" class="whatsapp-btn">
+            </a>
+        </div>
+
+        <!-- Section 3 & 4 -->
+        <img src="https://sc01.alicdn.com/kf/H29759042c3d34976850944a34a4eb83dA.png" alt="3">
+        <img src="https://sc01.alicdn.com/kf/Hfa41fc0d27214411a6b4349a706967062.png" alt="4">
+
+        <!-- Button 2 -->
+        <div class="btn-container">
+            <a href="https://wa.me/8618859307737" target="_blank">
+                <img src="https://sc01.alicdn.com/kf/Heb008775a78f4f01a00dad16e968d5ddQ.png" alt="WhatsApp Button" class="whatsapp-btn">
+            </a>
+        </div>
+
+        <!-- Section 5 & 6 -->
+        <img src="https://sc01.alicdn.com/kf/H928f64fc3f49437385e73b45ed978744K.png" alt="5">
+        <img src="https://sc01.alicdn.com/kf/H6c057c590707421c8daaaaa17cf9e74c0.png" alt="6">
+
+        <!-- Button 3 -->
+        <div class="btn-container">
+            <a href="https://wa.me/8618859307737" target="_blank">
+                <img src="https://sc01.alicdn.com/kf/Heb008775a78f4f01a00dad16e968d5ddQ.png" alt="WhatsApp Button" class="whatsapp-btn">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
